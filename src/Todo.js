@@ -5,7 +5,7 @@ export const Todo = ({ todo, onRemove}) => {
     return (
         <TouchableOpacity activeOpacity={0.5} 
         onPress={() =>console.log('Нажатие', todo.id)}
-        onLongPress={() => onRemove(todo.idп)}
+        onLongPress={() => onRemove(todo.id)}
         >
             <View style={styles.todo}>
                 <Text>{todo.title}</Text>
